@@ -1,0 +1,6 @@
+{
+  "name": "Juventude Digital 360°",
+  "description": "Portal moçambicano de tecnologia, conhecimento, emprego, bolsas de estudo, empreendedorismo e inovação para os jovens.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
