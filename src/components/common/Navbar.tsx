@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PageId } from '../../types';
 import { Logo } from './Logo';
+import { PWAInstallButton } from './PWAInstallButton';
 import {
   Menu,
   X,
@@ -129,8 +130,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, isAdmin
             </div>
           </nav>
 
-          {/* Zone 3: Primary Action & Mobile Menu Toggle */}
+          {/* Zone 3: Primary Action, PWA Install & Mobile Menu Toggle */}
           <div className="flex items-center gap-2.5 shrink-0">
+            <PWAInstallButton variant="nav" />
+
             <button
               onClick={() => handleNav('laboratorio')}
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#159447] hover:bg-[#0f6e34] text-white text-xs sm:text-sm font-bold shadow-xs hover:shadow-md transition-all whitespace-nowrap cursor-pointer active:scale-98"
@@ -166,6 +169,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, isAdmin
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-slate-200 bg-white shadow-xl max-h-[calc(100vh-4.5rem)] overflow-y-auto px-4 py-5 space-y-4">
+          {/* Mobile PWA Install Card */}
+          <div className="p-1">
+            <PWAInstallButton variant="mobile" />
+          </div>
+
           <div className="p-3 rounded-lg bg-blue-50/70 border border-blue-100 flex items-center justify-between">
             <div>
               <p className="text-xs font-bold text-[#123A70]">JUVENTUDE DIGITAL 360°</p>

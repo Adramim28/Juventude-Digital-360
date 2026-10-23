@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PageId, Opportunity, Scholarship, Course, NewsItem, IdeaProject } from '../types';
+import { PWAInstallButton } from '../components/common/PWAInstallButton';
 import {
   Search,
   Briefcase,
@@ -108,7 +109,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </div>
               </form>
 
-              {/* Primary Functional Buttons Specified in Brief */}
+              {/* Primary Functional Buttons Specified in Brief & PWA Install */}
               <div className="flex flex-wrap items-center gap-2.5 pt-2">
                 <button
                   onClick={() => onNavigate('emprego')}
@@ -134,6 +135,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 >
                   Enviar uma Ideia
                 </button>
+                <PWAInstallButton variant="hero" />
               </div>
             </div>
 

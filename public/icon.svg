@@ -1,0 +1,22 @@
+<svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="104" fill="#123A70" />
+  
+  <!-- Outer 360 dynamic orbit segments -->
+  <path d="M 256 64 A 192 192 0 0 1 448 256" stroke="#FFFFFF" stroke-width="32" stroke-linecap="round" />
+  <path d="M 448 256 A 192 192 0 0 1 256 448" stroke="#159447" stroke-width="32" stroke-linecap="round" />
+  <path d="M 256 448 A 192 192 0 0 1 64 256" stroke="#FFC928" stroke-width="32" stroke-linecap="round" />
+  <path d="M 64 256 A 192 192 0 0 1 256 64" stroke="#E53935" stroke-width="32" stroke-linecap="round" />
+
+  <!-- Inner white circular background -->
+  <circle cx="256" cy="256" r="130" fill="#FFFFFF" />
+
+  <!-- Graduation / Open Book Wings -->
+  <path d="M 170 280 C 170 238, 215 224, 256 248 C 297 224, 342 238, 342 280 L 342 328 C 297 305, 256 318, 256 318 C 256 318, 215 305, 170 328 Z" fill="#123A70" />
+
+  <!-- Rising Tech Sprout Stem & Node -->
+  <circle cx="256" cy="182" r="24" fill="#159447" />
+  <path d="M 256 206 L 256 248" stroke="#159447" stroke-width="16" stroke-linecap="round" />
+
+  <!-- Innovation Spark / Yellow accent -->
+  <circle cx="318" cy="192" r="12" fill="#FFC928" />
+</svg>

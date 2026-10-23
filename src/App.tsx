@@ -21,6 +21,7 @@ import { Footer } from './components/common/Footer';
 import { OfficialLinkModal } from './components/common/OfficialLinkModal';
 import { ReportVagaModal } from './components/common/ReportVagaModal';
 import { SuggestCourseModal } from './components/common/SuggestCourseModal';
+import { OfflineBanner } from './components/common/OfflineBanner';
 
 // Pages
 import { HomePage } from './pages/HomePage';
@@ -256,6 +257,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer onNavigate={handleNavigate} />
+
+      {/* Real-time Offline Connectivity Status */}
+      <OfflineBanner />
     </div>
   );
 }
