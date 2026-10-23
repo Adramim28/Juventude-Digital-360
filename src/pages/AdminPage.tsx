@@ -10,6 +10,7 @@ import {
   MozambiqueProvince
 } from '../types';
 import { StorageService } from '../services/storage';
+import { Logo } from '../components/common/Logo';
 import {
   Lock,
   Unlock,
@@ -215,8 +216,8 @@ export const AdminPage: React.FC<AdminPageProps> = ({
     return (
       <div className="max-w-md mx-auto px-4 py-16">
         <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-xl space-y-6 text-center">
-          <div className="w-16 h-16 rounded-2xl bg-blue-50 text-[#123A70] flex items-center justify-center mx-auto border border-blue-100">
-            <Lock className="w-8 h-8 text-[#123A70]" />
+          <div className="flex justify-center">
+            <Logo size="lg" />
           </div>
 
           <div>
